@@ -11,7 +11,7 @@ tables = ["Categorie", "Activite", "Process_Group", "Process", "Tache"] ## Liste
 ## Je vais parcourir toutes les tables pour créer tous les fichiers en une seule fois
 for table in tables:
     requete = f"SELECT * FROM {table}" ## Je séléctionne toutes  les lignes et colonnes de ma table
-    resultats = curseur.execute(requete).fetchall() ##  J'exécute ma requête et j'attends que je récupère toutes les donnée
+    resultats = curseur.execute(requete).fetchall() ##  exécution de la requête et recupération de toutes les données
 
 # Nom du fichier CSV de sortie
     nom_fichier_csv = f"{table}.csv" ###   J'ajoute ".csv" au nom de mon fichier, je veux que cela soit clair ; 
